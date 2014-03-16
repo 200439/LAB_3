@@ -1,0 +1,126 @@
+\hypertarget{classzegar}{\section{zegar \-Class \-Reference}
+\label{classzegar}\index{zegar@{zegar}}
+}
+
+
+\-Definicja klasy zegar.  
+
+
+
+
+{\ttfamily \#include $<$zegar.\-hh$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classzegar_a20f54bf635dd6b8fa3729a898dee0b02}{start} ()
+\begin{DoxyCompactList}\small\item\em \-Pobiera czas i zapisuje w zmiennej t1. \end{DoxyCompactList}\item 
+void \hyperlink{classzegar_a11470b47ba97baeb33376062c8765e29}{stop} ()
+\begin{DoxyCompactList}\small\item\em \-Pobiera czas i zapisuje w zmiennej t2 oraz wylicza roznice t2-\/t1. \end{DoxyCompactList}\item 
+void \hyperlink{classzegar_adefab1d01ca1e95b6a6cf31c7322f78d}{wyswietl} ()
+\begin{DoxyCompactList}\small\item\em \-Wyswietla czas na ekranie. \end{DoxyCompactList}\item 
+void \hyperlink{classzegar_af63513dc1f53641aad781ebf8c502c27}{zapisz\-\_\-wynik} ()
+\begin{DoxyCompactList}\small\item\em \-Zapisuje czas do pliku \char`\"{}wynik.\-csv\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{classzegar_a8b17a25c75a2866f6660fff4230e4155}{zapisz\-\_\-wynik} (const char $\ast$nazwa)
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+timeval \hyperlink{classzegar_a4c16d3b27f74dc7760b8a23269a20a7b}{stoper}
+\item 
+long double \hyperlink{classzegar_aafb4ae592701809482f334fb0d3e55bf}{t1}
+\item 
+long double \hyperlink{classzegar_ac32f1b83ea11b875ba4356afba430581}{t2}
+\item 
+long double \hyperlink{classzegar_a2249608c9a5286bba25e22a8d607dc5c}{czas}
+\item 
+long double \hyperlink{classzegar_ae51c387a5599badba9221824ae75b1de}{sekundy}
+\item 
+ofstream \hyperlink{classzegar_ab52ebd6c7d2692754d05935d9b777be9}{wynik}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Definicja klasy zegar. 
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classzegar_a20f54bf635dd6b8fa3729a898dee0b02}{\index{zegar@{zegar}!start@{start}}
+\index{start@{start}!zegar@{zegar}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf zegar\-::start} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classzegar_a20f54bf635dd6b8fa3729a898dee0b02}
+
+
+\-Pobiera czas i zapisuje w zmiennej t1. 
+
+\hypertarget{classzegar_a11470b47ba97baeb33376062c8765e29}{\index{zegar@{zegar}!stop@{stop}}
+\index{stop@{stop}!zegar@{zegar}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf zegar\-::stop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classzegar_a11470b47ba97baeb33376062c8765e29}
+
+
+\-Pobiera czas i zapisuje w zmiennej t2 oraz wylicza roznice t2-\/t1. 
+
+\hypertarget{classzegar_adefab1d01ca1e95b6a6cf31c7322f78d}{\index{zegar@{zegar}!wyswietl@{wyswietl}}
+\index{wyswietl@{wyswietl}!zegar@{zegar}}
+\subsubsection[{wyswietl}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf zegar\-::wyswietl} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classzegar_adefab1d01ca1e95b6a6cf31c7322f78d}
+
+
+\-Wyswietla czas na ekranie. 
+
+\hypertarget{classzegar_af63513dc1f53641aad781ebf8c502c27}{\index{zegar@{zegar}!zapisz\-\_\-wynik@{zapisz\-\_\-wynik}}
+\index{zapisz\-\_\-wynik@{zapisz\-\_\-wynik}!zegar@{zegar}}
+\subsubsection[{zapisz\-\_\-wynik}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf zegar\-::zapisz\-\_\-wynik} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classzegar_af63513dc1f53641aad781ebf8c502c27}
+
+
+\-Zapisuje czas do pliku \char`\"{}wynik.\-csv\char`\"{}. 
+
+\hypertarget{classzegar_a8b17a25c75a2866f6660fff4230e4155}{\index{zegar@{zegar}!zapisz\-\_\-wynik@{zapisz\-\_\-wynik}}
+\index{zapisz\-\_\-wynik@{zapisz\-\_\-wynik}!zegar@{zegar}}
+\subsubsection[{zapisz\-\_\-wynik}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf zegar\-::zapisz\-\_\-wynik} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{nazwa}
+\end{DoxyParamCaption}
+)}}\label{classzegar_a8b17a25c75a2866f6660fff4230e4155}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classzegar_a2249608c9a5286bba25e22a8d607dc5c}{\index{zegar@{zegar}!czas@{czas}}
+\index{czas@{czas}!zegar@{zegar}}
+\subsubsection[{czas}]{\setlength{\rightskip}{0pt plus 5cm}long double {\bf zegar\-::czas}}}\label{classzegar_a2249608c9a5286bba25e22a8d607dc5c}
+\hypertarget{classzegar_ae51c387a5599badba9221824ae75b1de}{\index{zegar@{zegar}!sekundy@{sekundy}}
+\index{sekundy@{sekundy}!zegar@{zegar}}
+\subsubsection[{sekundy}]{\setlength{\rightskip}{0pt plus 5cm}long double {\bf zegar\-::sekundy}}}\label{classzegar_ae51c387a5599badba9221824ae75b1de}
+\hypertarget{classzegar_a4c16d3b27f74dc7760b8a23269a20a7b}{\index{zegar@{zegar}!stoper@{stoper}}
+\index{stoper@{stoper}!zegar@{zegar}}
+\subsubsection[{stoper}]{\setlength{\rightskip}{0pt plus 5cm}timeval {\bf zegar\-::stoper}}}\label{classzegar_a4c16d3b27f74dc7760b8a23269a20a7b}
+\hypertarget{classzegar_aafb4ae592701809482f334fb0d3e55bf}{\index{zegar@{zegar}!t1@{t1}}
+\index{t1@{t1}!zegar@{zegar}}
+\subsubsection[{t1}]{\setlength{\rightskip}{0pt plus 5cm}long double {\bf zegar\-::t1}}}\label{classzegar_aafb4ae592701809482f334fb0d3e55bf}
+\hypertarget{classzegar_ac32f1b83ea11b875ba4356afba430581}{\index{zegar@{zegar}!t2@{t2}}
+\index{t2@{t2}!zegar@{zegar}}
+\subsubsection[{t2}]{\setlength{\rightskip}{0pt plus 5cm}long double {\bf zegar\-::t2}}}\label{classzegar_ac32f1b83ea11b875ba4356afba430581}
+\hypertarget{classzegar_ab52ebd6c7d2692754d05935d9b777be9}{\index{zegar@{zegar}!wynik@{wynik}}
+\index{wynik@{wynik}!zegar@{zegar}}
+\subsubsection[{wynik}]{\setlength{\rightskip}{0pt plus 5cm}ofstream {\bf zegar\-::wynik}}}\label{classzegar_ab52ebd6c7d2692754d05935d9b777be9}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/piotr/\-Pulpit/\-L\-A\-B\-\_\-3/prj/\hyperlink{zegar_8hh}{zegar.\-hh}\item 
+/home/piotr/\-Pulpit/\-L\-A\-B\-\_\-3/prj/\hyperlink{zegar_8cpp}{zegar.\-cpp}\end{DoxyCompactItemize}

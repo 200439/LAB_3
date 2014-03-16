@@ -1,0 +1,100 @@
+#include <iostream>
+#include <fstream>
+#include <sys/time.h>
+#include <cstdlib>
+#include "stos_tab.hh"
+#include "stos_lista.hh"
+#include "kolejka.hh"
+#include "zegar.hh"
+#include "tablica.hh"
+
+using namespace std;
+/*!
+ * \file
+ * \brief Plik glowny programu 
+ *
+ */
+
+/*! \brief Funkcja glowna programu 
+ * 
+ * Testuje wszystkie funkcje programu. Liczy czas wykonania algorytmu \link Stos_tab::push oraz \link Stos_tab::push_2 i zapisuje je do plikow
+ * wynik_tab.csv oraz wynik_tab_2.csv.
+ */
+int main() {
+
+tablica dane;
+dane.wypelnij();
+dane.wyswietl();
+
+///////////////////////////////////////////////
+cout<<"\nStos_tab1:"<<endl;
+	Stos_tab pierwszy;
+	zegar watch;
+
+watch.start(); 
+		for(int i=0; i<dane.ilosc; i++) {
+			pierwszy.push(dane.tab_1[i]);
+		}
+watch.stop();
+
+watch.zapisz_wynik("wynik_tab.csv");
+
+watch.wyswietl();
+	pierwszy.wyswietl();
+
+		for(int i=0; i<2; i++) {
+			pierwszy.pop();
+		}
+	pierwszy.wyswietl();
+///////////////////////////////////////
+
+cout<<"\nStos_tab2:"<<endl;
+	Stos_tab pierwszy_2;
+	zegar watch_2;
+
+watch_2.start(); 
+	for(int i=0; i<dane.ilosc; i++) {
+			pierwszy_2.push_2(dane.tab_1[i]);
+		}
+watch_2.stop();
+
+watch_2.zapisz_wynik("wynik_tab_2.csv");
+
+watch_2.wyswietl();
+	
+	pierwszy_2.wyswietl();
+
+		for(int i=0; i<2; i++) {
+			pierwszy_2.pop_2();
+		}
+	pierwszy_2.wyswietl();
+/////////////////////////////////////////////////////////////
+
+cout<<"\nStos_lista:"<<endl;
+	Stos_lista drugi;
+		for(int i=0; i<dane.ilosc; i++) {
+			drugi.push(dane.tab_1[i]);
+		}
+
+	drugi.wyswietl();
+
+		for(int i=0; i<2; i++) {
+			drugi.pop();
+		}
+	drugi.wyswietl();
+/////////////////////////////////////////////////////////////
+
+cout<<"\nKolejka:"<<endl;
+	Kolejka trzecia;
+		for(int i=0; i<dane.ilosc; i++) {
+			trzecia.enqueue(dane.tab_1[i]);
+		}
+
+	trzecia.wyswietl();
+
+		for(int i=0; i<2; i++) {
+			trzecia.dequeue();
+		}
+	trzecia.wyswietl();
+return 0;
+}

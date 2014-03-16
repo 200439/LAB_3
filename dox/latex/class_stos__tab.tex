@@ -1,0 +1,162 @@
+\hypertarget{class_stos__tab}{\section{\-Stos\-\_\-tab \-Class \-Reference}
+\label{class_stos__tab}\index{\-Stos\-\_\-tab@{\-Stos\-\_\-tab}}
+}
+
+
+\-Definicja stosu operujacego na tablicach.  
+
+
+
+
+{\ttfamily \#include $<$stos\-\_\-tab.\-hh$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_stos__tab_a6975cc04c513cac9a0db764b6d1cfe48}{\-Stos\-\_\-tab} ()
+\item 
+\hyperlink{class_stos__tab_a57302a02d5fc6ae8c6469bb2c6a2d67c}{$\sim$\-Stos\-\_\-tab} ()
+\item 
+int \hyperlink{class_stos__tab_a6680cd19cb9a759f2b8ed9ad99f878be}{pop} ()
+\begin{DoxyCompactList}\small\item\em \-Usuwa ostatni element tablicy. \end{DoxyCompactList}\item 
+int \hyperlink{class_stos__tab_a963aa3e29d1aada0adb13838dca0fc1f}{pop\-\_\-2} ()
+\begin{DoxyCompactList}\small\item\em \-Usuwa ostatni element tablicy. \end{DoxyCompactList}\item 
+void \hyperlink{class_stos__tab_ad8dc0731fd7bf7ddd00a792ca6dc0a5b}{push} (int e)
+\begin{DoxyCompactList}\small\item\em \-Dodaje element na koncu stosu. \end{DoxyCompactList}\item 
+void \hyperlink{class_stos__tab_ad1971d3f011bf84e8ffa2c3a69638668}{push\-\_\-2} (int e)
+\begin{DoxyCompactList}\small\item\em \-Dodaje element na koncu stosu. \end{DoxyCompactList}\item 
+int \hyperlink{class_stos__tab_acccd52de6a1b760da4223810d6063675}{size} ()
+\begin{DoxyCompactList}\small\item\em \-Sprawdza dlugosc stosu. \end{DoxyCompactList}\item 
+bool \hyperlink{class_stos__tab_ab4fef55704fd432bc4aa5241c91e661e}{is\-Empty} ()
+\begin{DoxyCompactList}\small\item\em \-Sprawdza czy sa jakies elementy. \end{DoxyCompactList}\item 
+void \hyperlink{class_stos__tab_a72a64e2c3fa075d9b2f6e17c02112b69}{wyswietl} ()
+\begin{DoxyCompactList}\small\item\em \-Wyswietla zawartosc stosu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_stos__tab_aadc220182c86eac8973434301019d574}{pojemnosc}
+\item 
+int $\ast$ \hyperlink{class_stos__tab_aa553f36a0b665f6a2c1bf2912fdcdd3d}{tab}
+\item 
+int \hyperlink{class_stos__tab_ae4ed3f46c3bee53437c6b201a6e47c49}{top}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Definicja stosu operujacego na tablicach. 
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_stos__tab_a6975cc04c513cac9a0db764b6d1cfe48}{\index{\-Stos\-\_\-tab@{\-Stos\-\_\-tab}!\-Stos\-\_\-tab@{\-Stos\-\_\-tab}}
+\index{\-Stos\-\_\-tab@{\-Stos\-\_\-tab}!Stos_tab@{\-Stos\-\_\-tab}}
+\subsubsection[{\-Stos\-\_\-tab}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Stos\-\_\-tab\-::\-Stos\-\_\-tab} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_stos__tab_a6975cc04c513cac9a0db764b6d1cfe48}
+\hypertarget{class_stos__tab_a57302a02d5fc6ae8c6469bb2c6a2d67c}{\index{\-Stos\-\_\-tab@{\-Stos\-\_\-tab}!$\sim$\-Stos\-\_\-tab@{$\sim$\-Stos\-\_\-tab}}
+\index{$\sim$\-Stos\-\_\-tab@{$\sim$\-Stos\-\_\-tab}!Stos_tab@{\-Stos\-\_\-tab}}
+\subsubsection[{$\sim$\-Stos\-\_\-tab}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Stos\-\_\-tab\-::$\sim$\-Stos\-\_\-tab} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_stos__tab_a57302a02d5fc6ae8c6469bb2c6a2d67c}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_stos__tab_ab4fef55704fd432bc4aa5241c91e661e}{\index{\-Stos\-\_\-tab@{\-Stos\-\_\-tab}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!Stos_tab@{\-Stos\-\_\-tab}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Stos\-\_\-tab\-::is\-Empty} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_stos__tab_ab4fef55704fd432bc4aa5241c91e661e}
+
+
+\-Sprawdza czy sa jakies elementy. 
+
+\-Zwraca true gdy nie ma elementow, false w przeciwnym razie \hypertarget{class_stos__tab_a6680cd19cb9a759f2b8ed9ad99f878be}{\index{\-Stos\-\_\-tab@{\-Stos\-\_\-tab}!pop@{pop}}
+\index{pop@{pop}!Stos_tab@{\-Stos\-\_\-tab}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Stos\-\_\-tab\-::pop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_stos__tab_a6680cd19cb9a759f2b8ed9ad99f878be}
+
+
+\-Usuwa ostatni element tablicy. 
+
+\hypertarget{class_stos__tab_a963aa3e29d1aada0adb13838dca0fc1f}{\index{\-Stos\-\_\-tab@{\-Stos\-\_\-tab}!pop\-\_\-2@{pop\-\_\-2}}
+\index{pop\-\_\-2@{pop\-\_\-2}!Stos_tab@{\-Stos\-\_\-tab}}
+\subsubsection[{pop\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Stos\-\_\-tab\-::pop\-\_\-2} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_stos__tab_a963aa3e29d1aada0adb13838dca0fc1f}
+
+
+\-Usuwa ostatni element tablicy. 
+
+\-Usuwa ostatni element tablicy, po czym zmniejsza ja o 25\%, by nie zajmowac niepotrzebnej pamieci \hypertarget{class_stos__tab_ad8dc0731fd7bf7ddd00a792ca6dc0a5b}{\index{\-Stos\-\_\-tab@{\-Stos\-\_\-tab}!push@{push}}
+\index{push@{push}!Stos_tab@{\-Stos\-\_\-tab}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Stos\-\_\-tab\-::push} (
+\begin{DoxyParamCaption}
+\item[{int}]{e}
+\end{DoxyParamCaption}
+)}}\label{class_stos__tab_ad8dc0731fd7bf7ddd00a792ca6dc0a5b}
+
+
+\-Dodaje element na koncu stosu. 
+
+\-Powieksza tablice o 1 przy kazdym wywolaniu funkcji \hypertarget{class_stos__tab_ad1971d3f011bf84e8ffa2c3a69638668}{\index{\-Stos\-\_\-tab@{\-Stos\-\_\-tab}!push\-\_\-2@{push\-\_\-2}}
+\index{push\-\_\-2@{push\-\_\-2}!Stos_tab@{\-Stos\-\_\-tab}}
+\subsubsection[{push\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Stos\-\_\-tab\-::push\-\_\-2} (
+\begin{DoxyParamCaption}
+\item[{int}]{e}
+\end{DoxyParamCaption}
+)}}\label{class_stos__tab_ad1971d3f011bf84e8ffa2c3a69638668}
+
+
+\-Dodaje element na koncu stosu. 
+
+\-Powieksza tablice o polowe przy kazdym wywolaniu funkcji \hypertarget{class_stos__tab_acccd52de6a1b760da4223810d6063675}{\index{\-Stos\-\_\-tab@{\-Stos\-\_\-tab}!size@{size}}
+\index{size@{size}!Stos_tab@{\-Stos\-\_\-tab}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Stos\-\_\-tab\-::size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_stos__tab_acccd52de6a1b760da4223810d6063675}
+
+
+\-Sprawdza dlugosc stosu. 
+
+\-Zwraca wartosc ilosc \hypertarget{class_stos__tab_a72a64e2c3fa075d9b2f6e17c02112b69}{\index{\-Stos\-\_\-tab@{\-Stos\-\_\-tab}!wyswietl@{wyswietl}}
+\index{wyswietl@{wyswietl}!Stos_tab@{\-Stos\-\_\-tab}}
+\subsubsection[{wyswietl}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Stos\-\_\-tab\-::wyswietl} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_stos__tab_a72a64e2c3fa075d9b2f6e17c02112b69}
+
+
+\-Wyswietla zawartosc stosu. 
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_stos__tab_aadc220182c86eac8973434301019d574}{\index{\-Stos\-\_\-tab@{\-Stos\-\_\-tab}!pojemnosc@{pojemnosc}}
+\index{pojemnosc@{pojemnosc}!Stos_tab@{\-Stos\-\_\-tab}}
+\subsubsection[{pojemnosc}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Stos\-\_\-tab\-::pojemnosc}}}\label{class_stos__tab_aadc220182c86eac8973434301019d574}
+\hypertarget{class_stos__tab_aa553f36a0b665f6a2c1bf2912fdcdd3d}{\index{\-Stos\-\_\-tab@{\-Stos\-\_\-tab}!tab@{tab}}
+\index{tab@{tab}!Stos_tab@{\-Stos\-\_\-tab}}
+\subsubsection[{tab}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf \-Stos\-\_\-tab\-::tab}}}\label{class_stos__tab_aa553f36a0b665f6a2c1bf2912fdcdd3d}
+\hypertarget{class_stos__tab_ae4ed3f46c3bee53437c6b201a6e47c49}{\index{\-Stos\-\_\-tab@{\-Stos\-\_\-tab}!top@{top}}
+\index{top@{top}!Stos_tab@{\-Stos\-\_\-tab}}
+\subsubsection[{top}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Stos\-\_\-tab\-::top}}}\label{class_stos__tab_ae4ed3f46c3bee53437c6b201a6e47c49}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/piotr/\-Pulpit/\-L\-A\-B\-\_\-3/prj/\hyperlink{stos__tab_8hh}{stos\-\_\-tab.\-hh}\item 
+/home/piotr/\-Pulpit/\-L\-A\-B\-\_\-3/prj/\hyperlink{stos__tab_8cpp}{stos\-\_\-tab.\-cpp}\end{DoxyCompactItemize}
